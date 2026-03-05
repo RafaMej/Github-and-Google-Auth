@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		50D65E372F57B527001C1E0C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 50D65E362F57B527001C1E0C /* FirebaseAuth */; };
+		50D65E392F57B527001C1E0C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 50D65E382F57B527001C1E0C /* FirebaseCore */; };
+		50D65E3C2F57B56E001C1E0C /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 50D65E3B2F57B56E001C1E0C /* GoogleSignIn */; };
+		50D65E3E2F57B56E001C1E0C /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 50D65E3D2F57B56E001C1E0C /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		50D65E272F57B359001C1E0C /* StudentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		50D65E422F57B7A0001C1E0C /* Exceptions for "StudentApp" folder in "StudentApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 50D65E262F57B359001C1E0C /* StudentApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		50D65E292F57B359001C1E0C /* StudentApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				50D65E422F57B7A0001C1E0C /* Exceptions for "StudentApp" folder in "StudentApp" target */,
+			);
 			path = StudentApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D65E392F57B527001C1E0C /* FirebaseCore in Frameworks */,
+				50D65E372F57B527001C1E0C /* FirebaseAuth in Frameworks */,
+				50D65E3C2F57B56E001C1E0C /* GoogleSignIn in Frameworks */,
+				50D65E3E2F57B56E001C1E0C /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +89,10 @@
 			);
 			name = StudentApp;
 			packageProductDependencies = (
+				50D65E362F57B527001C1E0C /* FirebaseAuth */,
+				50D65E382F57B527001C1E0C /* FirebaseCore */,
+				50D65E3B2F57B56E001C1E0C /* GoogleSignIn */,
+				50D65E3D2F57B56E001C1E0C /* GoogleSignInSwift */,
 			);
 			productName = StudentApp;
 			productReference = 50D65E272F57B359001C1E0C /* StudentApp.app */;
@@ -94,6 +122,10 @@
 			);
 			mainGroup = 50D65E1E2F57B359001C1E0C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50D65E352F57B527001C1E0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				50D65E3A2F57B56E001C1E0C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50D65E282F57B359001C1E0C /* Products */;
 			projectDirPath = "";
@@ -256,11 +288,15 @@
 				DEVELOPMENT_TEAM = 69GKY9K326;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudentApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Usamos Face ID para proteger tu cuenta";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,12 +305,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.AppsMateria.StudentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,11 +328,15 @@
 				DEVELOPMENT_TEAM = 69GKY9K326;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudentApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Usamos Face ID para proteger tu cuenta";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +345,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.AppsMateria.StudentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +380,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50D65E352F57B527001C1E0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+		50D65E3A2F57B56E001C1E0C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50D65E362F57B527001C1E0C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50D65E352F57B527001C1E0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		50D65E382F57B527001C1E0C /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50D65E352F57B527001C1E0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		50D65E3B2F57B56E001C1E0C /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50D65E3A2F57B56E001C1E0C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		50D65E3D2F57B56E001C1E0C /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50D65E3A2F57B56E001C1E0C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50D65E1F2F57B359001C1E0C /* Project object */;
 }

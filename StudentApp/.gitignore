@@ -1,0 +1,52 @@
+# ─── Firebase / Google ────────────────────────────────────────────
+# Contains API keys, project ID, client secrets — NEVER commit this
+GoogleService-Info.plist
+
+# ─── Xcode ───────────────────────────────────────────────────────
+# User-specific Xcode settings
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# ─── Swift Package Manager ───────────────────────────────────────
+.build/
+.swiftpm/
+# Keep Package.resolved so teammates use the same dependency versions
+# !Package.resolved  ← uncomment if you want to track it
+
+# ─── CocoaPods (if used) ─────────────────────────────────────────
+Pods/
+*.xcworkspace
+!default.xcworkspace
+
+# ─── macOS ───────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ─── Environment / Secrets ───────────────────────────────────────
+*.env
+.env.local
+secrets.plist
+config.plist
+
+# ─── Fastlane (if used) ──────────────────────────────────────────
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
