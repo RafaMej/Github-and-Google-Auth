@@ -28,8 +28,13 @@ playground.xcworkspace
 
 # ─── CocoaPods (if used) ─────────────────────────────────────────
 Pods/
-*.xcworkspace
-!default.xcworkspace
+
+# ─── Xcode UI state ─────────────────────────────────────────
+*.xcscmblueprint
+*.xccheckout
+
+# ─── SwiftPM local cache ─────────────────────────────────────────
+Package.pins
 
 # ─── macOS ───────────────────────────────────────────────────────
 .DS_Store
